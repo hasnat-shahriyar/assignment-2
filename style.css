@@ -1,0 +1,436 @@
+/* ...................................... */
+body{
+    background: rgba(255, 144, 14, 0.1);
+    font-family: 'Work Sans', sans-serif;    
+}
+.header-area{
+
+}
+::selection {
+    color: #ffffff;
+    background: #FF900E;
+}
+/* ...................................... */
+
+/* -------------------------------------------------
+---------------- Header Area Starts ----------------
+------------------------------------------------- */
+
+/* ------------------------------------
+        Navigation Area
+------------------------------------ */
+/* ..... Logo ..... */
+.logo{
+    cursor: pointer;
+}
+.logo-name{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 53px;
+    text-align: center;
+    color: #131313;
+}
+/* ..... Logo Ends ..... */
+
+/* ... NAV Control Area ... */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+    margin-left: 180px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    color: #333;
+    text-decoration: none;
+    transition: 0.5s; 
+}
+
+li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.5s;
+    
+  }
+  
+  li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: #FF900E;
+  }
+
+nav li{
+
+    display: inline-block;
+    margin: 5px 10px;
+    list-style: none;
+    margin-left: 50px; 
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: #FF900E;
+}
+/* ... NAV Control Area Ends ... */
+/* ------------------------------------
+        Navigation Area Ends
+------------------------------------ */
+/* First Title Control Area */
+.hdr-contentArea{
+    text-align: center;
+    width: 862px;
+    height: 225px;
+    margin: 0 auto;
+}
+/* ....................... */
+/* First Title */
+.first-title{
+    font-weight: 700;
+    font-size: 30px;
+}
+.first-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+/* First Title Ends */
+/* Explore Button */
+.explore-btn{
+    background: #FF900E;
+    border: 0;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 35px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #FFFFFF;
+    height: 45px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    transition: 0.8s cubic-bezier(0.95, 0.18, 0.27, 0.95);
+    cursor: pointer;
+}
+
+.explore-btn:hover{
+    background-color: #ff4700;
+    color: #ffffff
+}
+/* Explore Button Ends */
+/* Header Banner */
+.head-banner{
+    display: flex;
+    justify-content: center;
+}
+.head-banner img{
+
+}
+/* Header Banner Ends */
+/* -------------------------------------------------
+---------------- Header Area Ends ----------------
+------------------------------------------------- */
+
+
+
+/* -------------------------------------------------
+---------------- Content Area Starts ---------------
+------------------------------------------------- */
+/* Main Content Area Control */
+main{
+    background-color: #FFFF;
+}
+
+/* ------------------------------------
+        First Content Area
+------------------------------------ */
+
+/* Main Content Area Control */
+.contentArea-1{
+    margin-top: 55%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* Image Area */
+.content1-images{
+    display: grid;
+    grid-template-areas: "im im";
+    grid-gap: 25px;
+    margin-top: 85px;
+    margin-left: 80px;  
+}
+.image{
+
+}
+.content1-images img{
+
+}
+/* Quick List Area */
+.quickList-info{
+    width: 537px;
+    height: 304px;
+    margin-left: 70px;
+}
+.quickList-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #727272;
+}
+.span1{
+    color: #131313;
+}
+.span2{
+    color: #FF900E;
+}
+.quickList-description{
+
+}
+/* ------------------------------------
+        First Content Area Ends
+------------------------------------ */
+
+/* ------------------------------------
+        2nd Content Area
+------------------------------------ */
+/* 2nd Content Control Area */
+.contentArea-2{
+
+}
+.feature-content{
+    margin-left: 10%;
+}
+.feature-area{
+
+}
+.feature-title{
+    font-weight: 700;
+    font-size: 45px;
+}
+.shape{
+    color: #FF900E;
+    height: 106px;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.feature-description{
+    width: 586px;
+    height: 78px;
+    color: #727272;   
+}
+/* Second Section of Feature Area */
+.feature-box{
+    width: 450px;
+    height: 160px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 6px 50px rgb(0 0 0 / 6%);
+    margin-bottom: 30px;
+}
+.feature-name{
+
+}
+.feature-info{
+    color: #727272;    
+}
+
+.feature-image{
+    float: right;
+    margin-right: 5%;
+}
+.exprnc-btn{
+    background: #FF900E;
+    border: none;
+    font-weight: 600;
+    font-size: 25px;
+    color: #FFFFFF;
+    width: 235px;
+    height: 155px;
+    border-radius: 8px;
+    position: relative;
+    float: right;
+    right: 44%;
+    top: -130px;
+    cursor: pointer;
+    display: block;
+}
+
+
+.exprnc-btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);              transition: none;
+}
+
+.exprnc-btn:hover:after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);              transition: all 0.4s ease-in-out;
+}
+/* .feature-image img{
+
+} */
+/* ------------------------------------
+        2nd Content Area Ends
+------------------------------------ */
+
+
+/* ------------------------------------
+        3rd Content Area Starts
+------------------------------------ */
+.contentArea-3{
+    background-color: #fff;
+
+}
+.fact-container{
+
+}
+/* First Section of FACT Area */
+.fact-first{
+    margin-top: 130px;
+    margin-left: 10%;
+}
+.fact-title{
+    font-weight: 700;
+    font-size: 45px;
+}
+.fact-description{
+    font-weight: 400;
+    font-size: 16px;
+    width: 542px;
+    height: 52px;
+    line-height: 26px;   
+    color: #727272;
+}
+/* Second Section of Fact Area */
+/* Main Control */
+.fact-part2{
+    margin-top: 100px;
+    margin-left: 10%;
+    display: flex;
+    gap: 7%;
+}
+/* Fact Box */
+.fact-box{
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.fact-box img{
+    margin-top: 50px;
+}
+.fact-num{
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.fact-name{
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+/* ------------------------------------
+        3rd Content Area Ends
+------------------------------------ */
+
+/* ------------------------------------
+        4th Content Section
+------------------------------------ */
+/* Main Control */
+.contentArea-4{
+    background-color: #FFFFFF;
+    margin-bottom: 8%;
+}
+/* Sponsor Area */
+.sponsor-first{
+    margin-top: 180px;
+    margin-left: 5%;
+}
+.sponsor-title{
+    font-weight: 700;
+    font-size: 45px;
+    text-align: center; 
+}
+.sponsor-description{
+    width: 542px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #727272;
+    margin-left: 30%;
+}
+/* Second Section of Sponsor Area */
+.sponsors{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    margin-top: 5%;
+}
+/* .sponsor-logo{
+
+} */
+.sponsors img{
+    filter: grayscale(100%);
+    transition: 1s cubic-bezier(0.31, 0.36, 0, 0.68);    
+}
+.sponsors img:hover{
+    filter: grayscale(0%);
+}
+/* ------------------------------------
+        4th Content Section Ends
+------------------------------------ */
+
+/* -------------------------------------------------
+---------------- Content Area Ends ---------------
+------------------------------------------------- */
+
+/* --------------                 --------------- */
+
+
+/* -------------------------------------------------
+---------------- Footer Area Starts ---------------
+------------------------------------------------- */
+/* Main Control */
+.footer-area{
+    background-color: #FFFF;
+    height: 210px;
+}
+/* Footer Tittle */
+.footer-title{
+    background: #FFF4E7;
+    border-radius: 5px;
+    width: 915px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-left: 24%;
+}
+.copyright{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #424242;
+}
+/* -------------------------------------------------
+---------------- Content Area Ends ---------------
+------------------------------------------------- */
