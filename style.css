@@ -29,6 +29,10 @@ body{
     line-height: 53px;
     text-align: center;
     color: #131313;
+    transition: all 0.5s;
+}
+.logo-name:hover{
+    color: #FF900E;
 }
 /* ..... Logo Ends ..... */
 
@@ -93,7 +97,7 @@ nav ul li a:hover{
 /* First Title */
 .first-title{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 60px;
 }
 .first-description{
     font-weight: 400;
@@ -110,10 +114,7 @@ nav ul li a:hover{
     font-weight: 600;
     font-size: 14px;
     padding: 10px 35px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 2px;
     color: #FFFFFF;
     height: 45px;
     margin-top: 40px;
@@ -169,12 +170,18 @@ main{
     grid-gap: 25px;
     margin-top: 85px;
     margin-left: 80px;  
+
 }
 .image{
 
 }
 .content1-images img{
+    transition: 1s cubic-bezier(0.48, 0.19, 0, 0.41);
+}
 
+
+.content1-images img:hover{
+    transform: scale(1.05);
 }
 /* Quick List Area */
 .quickList-info{
@@ -238,7 +245,12 @@ main{
     padding: 30px;
     box-shadow: 0px 6px 50px rgb(0 0 0 / 6%);
     margin-bottom: 30px;
+    transition: 1s cubic-bezier(0.48, 0.19, 0, 0.41);  
 }
+.feature-box:hover{
+    transform: translateX(-20px);
+}
+
 .feature-name{
 
 }
@@ -332,22 +344,30 @@ main{
     border: 1px solid #FF900E;
     border-radius: 8px;
     text-align: center;
+    transition: 1s cubic-bezier(0.48, 0.19, 0, 0.41);  
 }
 
 .fact-box img{
     margin-top: 50px;
 }
+
 .fact-num{
     font-weight: 600;
     font-size: 45px;
-    color: #424242;
     margin-top: 10px;
     margin-bottom: 5px;
+    color: #333;
 }
+
 .fact-name{
     font-weight: 600;
     font-size: 20px;
     color: #727272;
+}
+
+.fact-box:hover{
+    background-color: #ff900e1a;
+    transform: translateY(-20px);
 }
 /* ------------------------------------
         3rd Content Area Ends
